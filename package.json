@@ -1,0 +1,25 @@
+{
+  "name": "intro-to-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "module",
+    "url": "git+https://github.com/Aishaml1/Intro-to-Express-Lab.git"
+  },
+  "author": "Aisha Lugg",
+  "type": "module",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aishaml1/Intro-to-Express-Lab/issues"
+  },
+  "homepage": "https://github.com/Aishaml1/Intro-to-Express-Lab#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
