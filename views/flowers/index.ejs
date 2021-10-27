@@ -7,7 +7,10 @@
     <title>Flower Garden</title>
 </head>
 <body>
-    <h1>Flowers</h1>
+    <!-- <%  %> no ink  -->
+    <!-- <%=  %> ink time  -->
+
+    <h1>Flower Garden</h1>
     <% if(error) { %>
     <h2><%= error %></h2>
     <% } %>
@@ -16,7 +19,7 @@
         <li>
     <%= flower.type %>
             - 
-    <%= flower.love ? '🌹' : '❤️' %>
+    <%= flower.love ? '❤️' : '🌹' %>
         </li>
     <% }) %>
     </ul>

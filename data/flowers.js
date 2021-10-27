@@ -1,9 +1,9 @@
 
 const flowers = [
-    {type: 'Roses', love: true, _id:345765},
-    {type: 'Orchids', love: false, _id:309283},
-    {type: 'Aster',     love: false, _id:345671},
-    {type: 'Dahlias', love: false, _id:123456}
+    {type: 'Roses', love: false, _id:345765},
+    {type: 'Orchids', love: true, _id:309283},
+    {type: 'Aster',     love: true, _id:345671},
+    {type: 'Dahlias', love: true, _id:123456}
 ]
 
 const find = (conditions, callback) => {
@@ -17,7 +17,6 @@ const find = (conditions, callback) => {
     if (Object.keys(conditions).length === 0) return callback(null, flowers)
       // deal with errors
     } catch (error) {
-    console.log(error)
     callback(error, [])
     }
 }
