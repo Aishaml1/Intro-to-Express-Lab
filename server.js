@@ -35,6 +35,13 @@ app.set('view engine', 'ejs')
 //*res.json() - Send a JSON response (used when we communicate via AJAX)
 
 
+app.get('/', function (req, res) { //Listen for get requests on the base route: localhost:3000
+    res.redirect('/flowers')
+    // Redirects tell the browser to make a new GET request to the provided path. 
+    // Redirects will come in handy later on when we start creating, updating, or deleting data.
+})
+
+
 app.get('/flowers', function(req, res) {
 flowersDb.find({}, function(error, flowers) {
     res.render('flowers/index', {
