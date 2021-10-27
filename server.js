@@ -2,8 +2,8 @@
 import express from 'express'
 
 //imports from data 
-import * as flowersDb from './data/flowers.js'
-import { find } from './data/flowers.js'
+import * as flowersDb from './data/flowers-db.js'
+import { find } from './data/flowers-db.js'
 
 // Create Express app
 
